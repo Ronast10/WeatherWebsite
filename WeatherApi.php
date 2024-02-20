@@ -1,6 +1,3 @@
-// Student name: Ronast Acharya
-// Student id: 2417737
-
 <?php
 header('Content-Type: application/json');
 
