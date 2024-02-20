@@ -1,0 +1,109 @@
+/* Student name: Ronast Acharya 
+Student id: 2417737 */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    background-image: url(https://letdream.ap-south-1.linodeobjects.com/opendream.ori/4944764cfbe909488b_0.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.weather-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.weather-box {
+    font-size: medium;
+    width: 26%;
+    margin: 10px;
+    background-color: rgb(152, 184, 184);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: skyblue;
+    text-align: center;
+    min-height: 300px; /* Set a minimum height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-box input[type="text"],
+.weather-box button {
+    padding: 5px;
+    margin: 5px;
+    font-size: small;
+    display: inline-block;
+}
+
+button {
+    background-color:rgb(19, 44, 44);
+    color: #fff;
+    border: 1px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d5981;
+}
+
+#weatherData {
+    width: 48%;
+    margin-top: 20px;
+}
+
+.right {
+    width: 45%;
+    background-color: #f1f1f1; 
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.right h1 {
+    text-align: center;
+    color: #2b77aa;
+}
+
+.week-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    background-color: rgb(152, 184, 184);
+}
+
+.week-table th, .week-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-size: small;
+}
+
+.week-table th {
+    background-color: rgb(152, 184, 184);
+    color: #fff;
+}
+
+.week-table tr:hover {
+    background-color: rgb(207, 181, 181);
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgb(209, 194, 194);
+    text-align: center;
+    padding: 4px 0;
+    font-size: small;
+    height: 35px;
+    border: 0px;
+}
