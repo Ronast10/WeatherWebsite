@@ -1,6 +1,3 @@
-// Student name: Ronast Acharya
-// Student id: 2417737
-
 // OpenWeatherMap API key and URL
 const apiKey = "ad23f9e08b7b4f0e50887b7b9ea618a1";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
@@ -146,6 +143,12 @@ function displayError() {
 // Event listener for the search button to check weather for the entered city
 searchBtn.addEventListener("click", () => {
     checkWeather(searchBox.value);
+});
+
+searchBox.addEventListener("keypress", (event) => {
+    if (event.key === "Enter") {
+        checkWeather(searchBox.value);
+    }
 });
 
 // Initial weather check for the default city on page load
